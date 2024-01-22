@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockeys</title>
-    <!-- tailwind and daisyUI cdn link  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- manrope google font link  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- font-awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind and daisyUI cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        primaryColor: '#FF4240',
+                        primaryTitleColor: '#131318',
                     }
                 }
             }
@@ -31,11 +39,80 @@
 </head>
 
 <body>
-    <header>
-
+    <header class="container mx-auto mt-5">
+        <!-- navbar part  -->
+        <nav>
+            <div class="navbar p-0 bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="pe-4 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="text-primaryColor font-bold text-base"><a>Home</a></li>
+                            <li class="text-base text-[#424247]"><a>About</a></li>
+                            <li class="text-base text-[#424247]"><a>Pages</a></li>
+                            <li class="text-base text-[#424247]"><a>Blog</a></li>
+                            <li class="text-base text-[#424247]"><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-2xl lg:text-4xl font-extrabold text-primaryTitleColor">Hockey<span
+                            class="text-primaryColor">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-primaryColor font-bold text-base"><a>Home</a></li>
+                        <li class="text-base text-[#424247]"><a>About</a></li>
+                        <li class="text-base text-[#424247]"><a>Pages</a></li>
+                        <li class="text-base text-[#424247]"><a>Blog</a></li>
+                        <li class="text-base text-[#424247]"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex justify-end items-center gap-x-6">
+                    <i class="fa-solid fa-magnifying-glass w-6 text-[#89898B] hidden lg:block"></i>
+                    <a
+                        class="text-white text-lg lg:text-xl font-bold bg-[#FF4240] py-1 px-5 lg:py-3 lg:px-6 rounded-lg">Button</a>
+                </div>
+            </div>
+        </nav>
+        <!-- banner section part  -->
+        <section class="container mt-14 mb-24">
+            <div class="carousel h-[550px]">
+                <!-- slider one  -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="images/1.png" class="w-full h-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider two -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="https://img.freepik.com/free-photo/soccer-players-action-professional-stadium_654080-1171.jpg?w=740&t=st=1705955201~exp=1705955801~hmac=12e6e28c1f768bb44463be1e3d94ab5727edc6249dfc38ad6f5b3d345e8c8239"
+                        class="w-full rounded-2xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider three -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="https://img.freepik.com/free-photo/practicing-expertise-technician-focused-soccer_1134-987.jpg?w=740&t=st=1705955329~exp=1705955929~hmac=fa5185bbf2f8e6e0f7ba583076a983c4295fd55ae302758db3d942d5505fb24b"
+                        class="w-full rounded-2xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main>
     </header>
-    <main>
-
     </main>
     <footer>
 
