@@ -39,7 +39,7 @@
 </head>
 
 <body>
-    <header class="container mx-auto mt-5">
+    <header class="w-10/12 lg:container mx-auto mt-5">
         <!-- navbar part  -->
         <nav>
             <div class="navbar p-0 bg-base-100">
@@ -81,34 +81,50 @@
             </div>
         </nav>
         <!-- banner section part  -->
-        <section class="container mt-14 mb-24">
-            <div class="carousel h-[550px]">
+        <section class="container mt-14 mb-24 relative">
+            <div class="carousel h-[200px] lg:h-[550px]">
                 <!-- slider one  -->
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="images/1.png" class="w-full h-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    <div
+                        class="absolute transform -translate-x-1/2 lg:translate-x-0 left-1/2 bottom-5 lg:left-10 lg:bottom-10 space-x-4">
+                        <a href="#slide4"
+                            class="btn border-0 btn-circle hover:bg-black bg-black text-white font-ligh">❮</a>
+                        <a href="#slide2"
+                            class="btn border-0 btn-circle hover:bg-black bg-black text-white font-light">❯</a>
                     </div>
                 </div>
                 <!-- slider two -->
                 <div id="slide2" class="carousel-item relative w-full">
                     <img src="https://img.freepik.com/free-photo/soccer-players-action-professional-stadium_654080-1171.jpg?w=740&t=st=1705955201~exp=1705955801~hmac=12e6e28c1f768bb44463be1e3d94ab5727edc6249dfc38ad6f5b3d345e8c8239"
                         class="w-full rounded-2xl" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a>
-                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    <div
+                        class="absolute transform -translate-x-1/2 lg:translate-x-0 left-1/2 bottom-5 lg:left-10 lg:bottom-10 space-x-4">
+                        <a href="#slide1"
+                            class="btn border-0 btn-circle hover:bg-black bg-black text-white font-ligh">❮</a>
+                        <a href="#slide3"
+                            class="btn border-0 btn-circle hover:bg-black bg-black text-white font-light">❯</a>
                     </div>
                 </div>
                 <!-- slider three -->
                 <div id="slide3" class="carousel-item relative w-full">
-                    <img src="https://img.freepik.com/free-photo/practicing-expertise-technician-focused-soccer_1134-987.jpg?w=740&t=st=1705955329~exp=1705955929~hmac=fa5185bbf2f8e6e0f7ba583076a983c4295fd55ae302758db3d942d5505fb24b"
+                    <img src="https://img.freepik.com/free-photo/amateur-football-concept-with-match-scene_23-2147833388.jpg?w=826&t=st=1705958414~exp=1705959014~hmac=a8867cf34c2adfc6a3d4ee7c47fa8bd89260834c2c780b0d43b483b810d0e40c"
                         class="w-full rounded-2xl" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    <div
+                        class="absolute transform -translate-x-1/2 lg:translate-x-0 left-1/2 bottom-5 lg:left-10 lg:bottom-10 space-x-4">
+                        <a href="#slide2"
+                            class="btn border-0 btn-circle hover:bg-black bg-black text-white font-ligh">❮</a>
+                        <a href="#slide1"
+                            class="btn border-0 btn-circle hover:bg-black bg-black text-white font-light">❯</a>
                     </div>
                 </div>
+            </div>
+            <div class="lg:absolute lg:bottom-8 lg:right-8 bg-gray-900 lg:w-5/12 mt-4 space-y-4 rounded-2xl p-8">
+                <h5 class="text-white text-lg lg:text-2xl font-extrabold">Meet all the heroes from the field</h5>
+                <p class="text-sm lg:text-base font-medium text-[#ffffff99]">Hello dear fans,do you want to meet the all
+                    heroes in
+                    the field? if you want just confirm the ticket.
+                </p>
             </div>
         </section>
         <main>
